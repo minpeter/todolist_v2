@@ -1,4 +1,4 @@
-package ml.minpeter.todolist.repository
+package com.minpeter.todolist_backend_v2.repository
 
 import org.hibernate.annotations.ColumnDefault
 import javax.persistence.*
@@ -7,7 +7,7 @@ import javax.persistence.*
 class Todo (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null,
+    var id: log? = null,
 
     @Column(nullable = false)
     @ColumnDefault("false")
