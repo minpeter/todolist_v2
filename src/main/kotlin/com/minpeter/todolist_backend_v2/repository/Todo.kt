@@ -7,7 +7,7 @@ import javax.persistence.*
 class Todo (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: log? = null,
+    var id: Long? = null,
 
     @Column(nullable = false)
     @ColumnDefault("false")
