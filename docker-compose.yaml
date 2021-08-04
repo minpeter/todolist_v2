@@ -5,12 +5,3 @@ services:
         build: .
         ports:
             - 3000:80
-    db:
-        image: mysql
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: todolist
-            MYSQL_USER: minpeter
-            MYSQL_PASSWORD: 1234
-        ports:
-            - 3306:3306
