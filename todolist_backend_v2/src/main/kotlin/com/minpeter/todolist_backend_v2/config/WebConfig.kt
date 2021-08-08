@@ -1,6 +1,5 @@
 package com.minpeter.todolist_backend_v2.config
 
-import org.apache.tomcat.util.http.parser.HttpParser
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpMethod
 import org.springframework.web.servlet.config.annotation.CorsRegistry

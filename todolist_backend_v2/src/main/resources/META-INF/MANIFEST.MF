@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.minpeter.todolist_backend_v2.TodolistBackendV2Applicatio
- nKt
-
