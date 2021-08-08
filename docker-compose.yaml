@@ -1,7 +1,29 @@
 version: "3"
 
 services:
-    nginx:
-        build: .
+    frontend:
+        image: minpeter/frontend
+        build: ./frontend
         ports:
             - 80:80
+        environment:
+            BASEURL: ${BASEURL}
+
+    backend:
+        image: minpeter/backend
+        build: ./backend
+        restart: always
+        ports:
+            - 8080:8080
+        depends_on:
+            - database
+
+    database:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: todolist
+            MYSQL_USER: minpeter
+            MYSQL_PASSWORD: 1234
+        ports:
+            - 3306:3306
