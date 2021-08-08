@@ -6,8 +6,6 @@ services:
         build: ./frontend
         ports:
             - 80:80
-        environment:
-            BASEURL: ${BASEURL}
 
     backend:
         image: minpeter/backend

@@ -6,15 +6,14 @@ import Input from './components/input';
 import Todo from './components/todo';
 
 function App() {
-  
-  const baseUrl = `http://${process.env.BASEURL}:8080`
+  const baseUrl = process.env.REACT_APP_BASEURL
   
   const [todos, setTodos] = useState([]);
   const [input, setInput] =  useState('')
 
   useEffect(() => {
     getTodos();
-  }, []);
+  });
 
   async function getTodos() {
     await axios
