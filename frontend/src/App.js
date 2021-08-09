@@ -11,9 +11,9 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] =  useState('')
 
-  useEffect(() => {
+  useEffect (() => {
     getTodos();
-  });
+  }, []);
 
   async function getTodos() {
     await axios
